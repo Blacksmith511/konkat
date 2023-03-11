@@ -1,0 +1,11 @@
+@font0: 'Montserrat', sans-serif;
+// @media-xsmall: 425px;
+@media-small: 1024px;
+@media-medium: 1200px;
+@media-large: 1440px;
+@media-xlarge: 1920px;
+.breakpoint(@value: 0; @content) when (@value > 0) {
+  @media (max-width: @value) {
+    @content();
+  }
+}
