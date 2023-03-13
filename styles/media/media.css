@@ -153,6 +153,9 @@
 @media (min-width: 320px) and (max-width: 358px)   {
 }
 @media (max-width: 425px)   {
+	.lkForm{
+		padding: 30px 16px;
+	}
 }
 @media (max-width: 375px)   {
 }

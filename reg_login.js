@@ -157,3 +157,7 @@ butz1.addEventListener('click', () => {
 	regAutorizContent7.classList.remove('act');
 	regAutoriz.classList.remove('act');
 });
+profInfoProfileEnter.addEventListener('click', () => {
+	profInfoProfileEnter.style.background="#323232";
+	profInfoProfileEnter.style.color="#ffffff";
+});
