@@ -1,9 +1,11 @@
 import './styles/main.less';
 //#2
+const fw = document.querySelector('.fw');
 const fz = document.querySelector('.fz');
 const ff = document.querySelectorAll('.ff');
 const childMenus = document.querySelector('.childrenMenus');
 //#podmenu
+const cMlinkfw = document.querySelector('.catalogMenu__li-link--fw');
 const cMlink = document.getElementsByClassName('catalogMenu__li-link');
 const cMlinkqs = document.querySelector('.catalogMenu__li-link');
 const cMlDef = document.querySelector('.childrenMenus__link--default');
@@ -36,7 +38,6 @@ fz.addEventListener('mouseenter', () => {
 	fz.classList.add('container__elem--df');
 	fz.classList.add('container__elem--15');
 	fz.classList.remove('container__elem--3');
-	childMenus.style.display = 'flex';
 	cMlinkqs.classList.add('active');
 	ff.forEach(function (item) {
 		item.classList.add('hide');
@@ -46,6 +47,30 @@ fz.addEventListener('mouseleave', () => {
 	fz.classList.remove('container__elem--df');
 	fz.classList.remove('container__elem--15');
 	fz.classList.add('container__elem--3');
+	topMenu.classList.toggle('add');
+	topMenuContent.classList.toggle('view');
+	for (var i = 0; i < cMlink.length; ++i) {
+		cMlink[i].classList.remove('active');
+	}
+	ff.forEach(function (item) {
+		item.classList.remove('hide');
+	});
+});
+//#2
+fw.addEventListener('mouseenter', () => {
+	fw.classList.add('container__elem--df');
+	fw.classList.add('container__elem--15');
+	fw.classList.remove('container__elem--3');
+	childMenus.style.display = 'flex';
+	cMlinkfw.classList.add('active');
+	ff.forEach(function (item) {
+		item.classList.add('hide');
+	});
+});
+fw.addEventListener('mouseleave', () => {
+	fw.classList.remove('container__elem--df');
+	fw.classList.remove('container__elem--15');
+	fw.classList.add('container__elem--3');
 	childMenus.style.display = 'none';
 	for (var i = 0; i < cMlink.length; ++i) {
 		cMlink[i].classList.remove('active');
@@ -54,9 +79,9 @@ fz.addEventListener('mouseleave', () => {
 		item.classList.remove('hide');
 	});
 });
-
 // Добавил: при наведении на меню добавляется класс active 
 function mouseenter() {
+	fw.setAttribute('data-ho', '1');
 	fz.setAttribute('data-ho', '1');
 	for (var i = 0; i < cMlink.length; ++i) {
 		cMlink[i].classList.remove('active');
@@ -64,6 +89,7 @@ function mouseenter() {
 	this.classList.add('active');
   }
 function mouseleave() {
+	fw.removeAttribute('data-ho', '1');
 	fz.removeAttribute('data-ho', '1');
 }
 
@@ -79,6 +105,13 @@ for (var i = 0; i < cMlink.length; i++) {
 topMenu.addEventListener('click', () => {
 	topMenu.classList.toggle('add');
 	topMenuContent.classList.toggle('view');
+	fz.classList.add('container__elem--df');
+	fz.classList.add('container__elem--15');
+	fz.classList.remove('container__elem--3');
+	cMlinkqs.classList.add('active');
+	ff.forEach(function (item) {
+		item.classList.add('hide');
+	});
 });
 
 //#4

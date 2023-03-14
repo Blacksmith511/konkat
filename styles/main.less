@@ -1524,12 +1524,14 @@ a {
 }
 }
 }
-
+.sect.s1 .catalogMenu{
+	padding-bottom: 10px;
+}
 .catalogMenu {
 	background: #fff;
 	border-radius: 10px;
-	min-width: 360px;
-	padding: 20px 20px 10px;
+	min-width: 300px;
+	padding: 20px;
 
 	.breakpoint(@media-xlarge, {
 		min-width: 264px;
@@ -1584,7 +1586,8 @@ ul {
 	a {
 		align-items: center;
 		display: flex;
-		justify-content: space-between;
+		// justify-content: space-between;
+		justify-content: flex-start;
 	}
 }
 }
@@ -1614,7 +1617,7 @@ ul {
 	font-size: 14px;
 	font-weight: 500;
 	letter-spacing: -0.02em;
-	margin-right: auto;
+	// margin-right: auto;
 
 	.breakpoint(@media-medium, {
 		font-size: 12px;
@@ -1627,6 +1630,7 @@ ul {
 	height: 20px;
 	justify-content: center;
 	width: 20px;
+	margin-left: auto;
 }
 
 .childrenMenus {
