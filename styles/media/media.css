@@ -72,7 +72,7 @@
 	width: 765px;
 }
 .content--other {
-	padding-top: 180px;
+	padding-top: 160px;
 }
 .contentos .prodItem:nth-child(4n) {
 	margin-right: 10px;
@@ -80,6 +80,11 @@
 .dopCont .prodItemS__r1 {
 	max-width: 360px;
 }
+}
+@media (min-width: 1200px) and (max-width: 1200px)   {
+	.content--other1 {
+		padding-top: 175px;
+	}
 }
 @media (min-width: 1025px) and (max-width: 1199px)   {
 
