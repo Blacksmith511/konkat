@@ -1,0 +1,168 @@
+@media (min-width: 1441px) and (max-width: 1861px) {
+	.header {
+		padding: 0 20px;
+	}
+}
+@media (min-width: 1441px) and (max-width: 1919px)   {
+	.prodItemas__left {
+    min-width: 740px;}
+		.slider111__col {
+			margin-right: 20px;
+
+		}
+	.contentos .prodItem:nth-child(5n) {
+    margin-right: 10px;
+}
+}
+@media (min-width: 1441px) and (max-width: 1685px)   {
+	.filterItem__minmaxpriceTop input {
+		width: 100px;
+	}
+	.filterItem__minmaxpriceLine2 {
+		width: 154px;
+	}
+}
+@media (min-width: 1201px) and (max-width: 1365px)   {
+.catalogMenu {
+	height: 100%;
+}
+.contentMenu{
+	height: 470px;
+}
+.deal {
+	height: 100%;
+}
+.dealProd {
+	padding: 3.5px 30px 5px;
+}
+.dealProd__img {
+	margin-top: 12px;
+}
+.catalogMenu ul li {
+	height: calc(24px + 10px);
+	/* margin-bottom: 10px; */
+}
+}
+@media (min-width: 1201px) and (max-width: 1439px)   {
+	.prodItemas__left {
+    min-width: 651px;
+}
+.container{
+	padding: 0 30px;
+}
+/* .header {
+	padding: 0 20px;
+} */
+	.catalogMenu {
+		min-width: 203px;
+	}
+	.content {
+    padding-top: 135px;
+}
+.content--other1 {
+	padding-top: 158px;
+}
+.profInfo__payMounth {
+	white-space: nowrap;
+}
+.offerItem {
+	width: 285px;
+}
+#slider7 .prodItemS {
+	width: 765px;
+}
+.content--other {
+	padding-top: 160px;
+}
+.contentos .prodItem:nth-child(4n) {
+	margin-right: 10px;
+}
+.dopCont .prodItemS__r1 {
+	max-width: 360px;
+}
+}
+@media (min-width: 1200px) and (max-width: 1200px)   {
+	.content--other1 {
+		padding-top: 175px;
+	}
+}
+@media (min-width: 1025px) and (max-width: 1199px)   {
+
+	.header {
+		padding: 0 20px;
+	}
+	.prodItemas__left {
+    min-width: 569px;
+}
+	.catalogMenu ul li {
+	height: calc(20px + 9px);
+    /* margin-bottom: 9px; */
+}
+.deal {
+	height: 100%;
+}
+.catalogMenu {
+	height: 100%;
+}
+.dealProd__img {
+	width: 100px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.dealProd__img img {
+	height: auto;
+}
+.slider {
+	width: 93%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.content {
+	padding-top: 135px;
+}
+.content--other {
+	padding-top: 180px;
+}
+.yvItem__img {
+	height: auto;
+}
+.social {
+	margin-bottom: 20px;
+}
+.filterItem__minmaxpriceTop input {
+	width: 60px;
+	font-size: 11px;
+}
+.filterItem__minmaxpriceLineWr {
+	position: absolute;
+	left: 32px;
+}
+.content--other1 {
+	padding-top: 158px;
+}
+.profInfo__payMounth {
+	white-space: nowrap;
+}
+.contentos .prodItem:nth-child(4n) {
+	margin-right: 10px;
+}
+}
+
+@media (max-width: 580px) {
+	input, select {
+	  font-size: 16px !important;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 358px)   {
+}
+@media (max-width: 425px)   {
+	.lkForm{
+		padding: 30px 16px;
+	}
+}
+@media (max-width: 375px)   {
+}
+@media (max-width: 320px)   {
+}
