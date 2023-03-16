@@ -1,5 +1,6 @@
 import './styles/main.less';
 //#2
+// CATALOG MENU
 const fw = document.querySelector('.fw');
 const fz = document.querySelector('.fz');
 const ff = document.querySelectorAll('.ff');
@@ -13,6 +14,7 @@ const cMl = document.querySelector('.childrenMenus__link');
 //#3
 const topMenu = document.querySelector('.topMenu');
 const topMenuContent = document.querySelector('.topMenuContent');
+// CATALOG MENU
 //#4
 const search = document.querySelector('.search');
 const searchInput = document.querySelector('.search input');
@@ -32,7 +34,7 @@ const mMenuzClose = document.querySelectorAll('.mMenuz__close');
 //#6
 const header = document.querySelector('.header');
 
-
+// CATALOG MENU
 //#2
 fz.addEventListener('mouseenter', () => {
 	fz.classList.add('container__elem--df');
@@ -113,7 +115,7 @@ topMenu.addEventListener('click', () => {
 		item.classList.add('hide');
 	});
 });
-
+// CATALOG MENU
 //#4
 searchInput.addEventListener('focus', () => {
 	search.classList.add('focus');
