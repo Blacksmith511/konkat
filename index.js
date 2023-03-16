@@ -1,15 +1,39 @@
 import './styles/main.less';
 //#2
-const fw = document.querySelector('.fw');
 const fz = document.querySelector('.fz');
 const ff = document.querySelectorAll('.ff');
 const childMenus = document.querySelector('.childrenMenus');
 //#podmenu
-const cMlinkfw = document.querySelector('.catalogMenu__li-link--fw');
-const cMlink = document.getElementsByClassName('catalogMenu__li-link');
-const cMlinkqs = document.querySelector('.catalogMenu__li-link');
+const cMlink1 = document.querySelector('.catalogMenu__link--1');
+const cMlink2 = document.querySelector('.catalogMenu__link--2');
+const cMlink3 = document.querySelector('.catalogMenu__link--3');
+const cMlink4 = document.querySelector('.catalogMenu__link--4');
+const cMlink5 = document.querySelector('.catalogMenu__link--5');
+const cMlink6 = document.querySelector('.catalogMenu__link--6');
+const cMlink7 = document.querySelector('.catalogMenu__link--7');
+const cMlink8 = document.querySelector('.catalogMenu__link--8');
+const cMlink9 = document.querySelector('.catalogMenu__link--9');
+const cMlink10 = document.querySelector('.catalogMenu__link--10');
+const cMlink11 = document.querySelector('.catalogMenu__link--11');
+const cMlink12 = document.querySelector('.catalogMenu__link--12');
+const cMlink13 = document.querySelector('.catalogMenu__link--13');
+const cMlink14 = document.querySelector('.catalogMenu__link--14');
 const cMlDef = document.querySelector('.childrenMenus__link--default');
-const cMl = document.querySelector('.childrenMenus__link');
+const cMl1 = document.querySelector('.childrenMenus__link--1');
+const cMl2 = document.querySelector('.childrenMenus__link--2');
+const cMl3 = document.querySelector('.childrenMenus__link--3');
+const cMl4 = document.querySelector('.childrenMenus__link--4');
+const cMl5 = document.querySelector('.childrenMenus__link--5');
+const cMl6 = document.querySelector('.childrenMenus__link--6');
+const cMl7 = document.querySelector('.childrenMenus__link--7');
+const cMl8 = document.querySelector('.childrenMenus__link--8');
+const cMl9 = document.querySelector('.childrenMenus__link--9');
+const cMl10 = document.querySelector('.childrenMenus__link--10');
+const cMl11 = document.querySelector('.childrenMenus__link--11');
+const cMl12 = document.querySelector('.childrenMenus__link--12');
+const cMl13 = document.querySelector('.childrenMenus__link--13');
+const cMl14 = document.querySelector('.childrenMenus__link--14');
+
 //#3
 const topMenu = document.querySelector('.topMenu');
 const topMenuContent = document.querySelector('.topMenuContent');
@@ -35,83 +59,130 @@ const header = document.querySelector('.header');
 
 //#2
 fz.addEventListener('mouseenter', () => {
-	fz.classList.add('container__elem--df');
 	fz.classList.add('container__elem--15');
+	fz.classList.add('container__elem--df');
 	fz.classList.remove('container__elem--3');
-	cMlinkqs.classList.add('active');
+	childMenus.style.display = 'flex';
 	ff.forEach(function (item) {
 		item.classList.add('hide');
 	});
 });
 fz.addEventListener('mouseleave', () => {
-	fz.classList.remove('container__elem--df');
 	fz.classList.remove('container__elem--15');
+	fz.classList.remove('container__elem--df');
+	fz.setAttribute('data-ho', '0');
 	fz.classList.add('container__elem--3');
-	topMenu.classList.toggle('add');
-	topMenuContent.classList.toggle('view');
-	for (var i = 0; i < cMlink.length; ++i) {
-		cMlink[i].classList.remove('active');
-	}
-	ff.forEach(function (item) {
-		item.classList.remove('hide');
-	});
-});
-//#2
-fw.addEventListener('mouseenter', () => {
-	fw.classList.add('container__elem--df');
-	fw.classList.add('container__elem--15');
-	fw.classList.remove('container__elem--3');
-	childMenus.style.display = 'flex';
-	cMlinkfw.classList.add('active');
-	ff.forEach(function (item) {
-		item.classList.add('hide');
-	});
-});
-fw.addEventListener('mouseleave', () => {
-	fw.classList.remove('container__elem--df');
-	fw.classList.remove('container__elem--15');
-	fw.classList.add('container__elem--3');
 	childMenus.style.display = 'none';
-	for (var i = 0; i < cMlink.length; ++i) {
-		cMlink[i].classList.remove('active');
-	}
 	ff.forEach(function (item) {
 		item.classList.remove('hide');
 	});
 });
-// Добавил: при наведении на меню добавляется класс active 
-function mouseenter() {
-	fw.setAttribute('data-ho', '1');
-	fz.setAttribute('data-ho', '1');
-	for (var i = 0; i < cMlink.length; ++i) {
-		cMlink[i].classList.remove('active');
-	}
-	this.classList.add('active');
-  }
-function mouseleave() {
-	fw.removeAttribute('data-ho', '1');
-	fz.removeAttribute('data-ho', '1');
-}
 
-for (var i = 0; i < cMlink.length; i++) {
-	cMlink[i].addEventListener('mouseenter', mouseenter, false)
-}
-for (var i = 0; i < cMlink.length; i++) {
-	cMlink[i].addEventListener('mouseleave', mouseleave, false)
-}
+//#podmenu
+cMlink1.addEventListener('mouseenter', () => {
+	fz.setAttribute('data-ho', '1');
+	cMlDef.classList.add('hide');
+});
+cMlink1.addEventListener('mouseleave', () => {
+	cMlDef.classList.remove('hide');
+});
+cMlink2.addEventListener('mouseenter', () => {
+	fz.setAttribute('data-ho', '2');
+	cMlDef.classList.add('hide');
+});
+cMlink2.addEventListener('mouseleave', () => {
+	cMlDef.classList.remove('hide');
+});
+cMlink3.addEventListener('mouseenter', () => {
+	fz.setAttribute('data-ho', '3');
+	cMlDef.classList.add('hide');
+});
+cMlink3.addEventListener('mouseleave', () => {
+	cMlDef.classList.remove('hide');
+});
+cMlink4.addEventListener('mouseenter', () => {
+	fz.setAttribute('data-ho', '4');
+	cMlDef.classList.add('hide');
+});
+cMlink4.addEventListener('mouseleave', () => {
+	cMlDef.classList.remove('hide');
+});
+cMlink5.addEventListener('mouseenter', () => {
+	fz.setAttribute('data-ho', '5');
+	cMlDef.classList.add('hide');
+});
+cMlink5.addEventListener('mouseleave', () => {
+	cMlDef.classList.remove('hide');
+});
+cMlink6.addEventListener('mouseenter', () => {
+	fz.setAttribute('data-ho', '6');
+	cMlDef.classList.add('hide');
+});
+cMlink6.addEventListener('mouseleave', () => {
+	cMlDef.classList.remove('hide');
+});
+cMlink7.addEventListener('mouseenter', () => {
+	fz.setAttribute('data-ho', '7');
+	cMlDef.classList.add('hide');
+});
+cMlink7.addEventListener('mouseleave', () => {
+	cMlDef.classList.remove('hide');
+});
+cMlink8.addEventListener('mouseenter', () => {
+	fz.setAttribute('data-ho', '8');
+	cMlDef.classList.add('hide');
+});
+cMlink8.addEventListener('mouseleave', () => {
+	cMlDef.classList.remove('hide');
+});
+cMlink9.addEventListener('mouseenter', () => {
+	fz.setAttribute('data-ho', '9');
+	cMlDef.classList.add('hide');
+});
+cMlink9.addEventListener('mouseleave', () => {
+	cMlDef.classList.remove('hide');
+});
+cMlink10.addEventListener('mouseenter', () => {
+	fz.setAttribute('data-ho', '10');
+	cMlDef.classList.add('hide');
+});
+cMlink10.addEventListener('mouseleave', () => {
+	cMlDef.classList.remove('hide');
+});
+cMlink11.addEventListener('mouseenter', () => {
+	fz.setAttribute('data-ho', '11');
+	cMlDef.classList.add('hide');
+});
+cMlink11.addEventListener('mouseleave', () => {
+	cMlDef.classList.remove('hide');
+});
+cMlink12.addEventListener('mouseenter', () => {
+	fz.setAttribute('data-ho', '12');
+	cMlDef.classList.add('hide');
+});
+cMlink12.addEventListener('mouseleave', () => {
+	cMlDef.classList.remove('hide');
+});
+cMlink13.addEventListener('mouseenter', () => {
+	fz.setAttribute('data-ho', '13');
+	cMlDef.classList.add('hide');
+});
+cMlink13.addEventListener('mouseleave', () => {
+	cMlDef.classList.remove('hide');
+});
+cMlink14.addEventListener('mouseenter', () => {
+	fz.setAttribute('data-ho', '14');
+	cMlDef.classList.add('hide');
+});
+cMlink14.addEventListener('mouseleave', () => {
+	cMlDef.classList.remove('hide');
+});
 
 
 //#3
 topMenu.addEventListener('click', () => {
 	topMenu.classList.toggle('add');
 	topMenuContent.classList.toggle('view');
-	fz.classList.add('container__elem--df');
-	fz.classList.add('container__elem--15');
-	fz.classList.remove('container__elem--3');
-	cMlinkqs.classList.add('active');
-	ff.forEach(function (item) {
-		item.classList.add('hide');
-	});
 });
 
 //#4
